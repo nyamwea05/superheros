@@ -1,7 +1,7 @@
-   Hero Tracker API
-License
+Hero Tracker API
 
 Introduction
+
 The Hero Tracker API is a Rails-based backend API designed to track heroes and their superpowers. It provides a comprehensive set of endpoints to manage heroes, powers, and their relationships. This README file provides detailed information on installation, usage, available routes, models, validations, and more.
 
 Table of Contents
@@ -75,7 +75,7 @@ The Hero Tracker API includes the following models and associations:
 Hero: Represents a hero and has many powers through HeroPower.
 Power: Represents a superpower and has many heroes through HeroPower.
 HeroPower: Represents the join table between heroes and powers, belonging to both.
-The models and their associations are set up in the respective model files. Refer to the code in app/models directory for more details.
+The models and their associations are set up in the respective model files. Refer to the code in the app/models directory for more details.
 
 Validations
 The Hero Tracker API applies the following validations to ensure data integrity:
@@ -85,4 +85,5 @@ HeroPower Model:
 strength field must be one of the following values: 'Strong', 'Weak', 'Average'.
 Power Model:
 
-`description
+description must be present and at least 20 characters long.
+These validations are implemented in the corresponding model files.
