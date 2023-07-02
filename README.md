@@ -18,30 +18,27 @@ To install and set up the Hero Tracker API, follow these steps:
 
 Clone the repository:
 
-bash
+
 Copy code
 $ git clone https://github.com/your/repository.git
-Navigate to the project directory:
 
-bash
+
+
 Copy code
 $ cd hero-tracker-api
 Install the required dependencies:
 
-bash
-Copy code
+
 $ bundle install
 Set up the database:
 
-bash
-Copy code
+
 $ rails db:create
 $ rails db:migrate
 $ rails db:seed
 Start the server:
 
-bash
-Copy code
+
 $ rails server
 Congratulations! The Hero Tracker API is now up and running on your local machine.
 
@@ -61,12 +58,11 @@ GET /heroes: Retrieve information about all heroes.
 GET /heroes/:id: Retrieve information about a specific hero.
 GET /powers: Retrieve information about all powers.
 GET /powers/:id: Retrieve information about a specific power.
-POST /heroes: Create a new hero.
-POST /powers: Create a new power.
-PATCH /heroes/:id: Update the details of a specific hero.
+
+POST /hero_powers: Create a new power.
+
 PATCH /powers/:id: Update the details of a specific power.
-DELETE /heroes/:id: Delete a specific hero.
-DELETE /powers/:id: Delete a specific power.
+
 For detailed information about the request formats and responses for each route, please refer to the API documentation.
 
 Models and Associations
@@ -87,3 +83,4 @@ Power Model:
 
 description must be present and at least 20 characters long.
 These validations are implemented in the corresponding model files.
+
